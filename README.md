@@ -4,7 +4,7 @@
 🌦️ Um projeto open-source de estação meteorológica IoT para monitorar qualidade do ar, temperatura, umidade, pressão e chuva.   Desenvolvido com NodeMCU ESP8266, sensores MQ-135, BMP180, DHT11 e módulo de chuva MH-RD.   Dados acessíveis via web server responsivo e exportáveis para CSV. Ideal para makers, educadores e entusiastas de IoT!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/seuuser/FormigaWeather-IoT-Station)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/jancarauma/FormigaWeather)
 
 ![Dashboard da Estação FormigaWeather](estacaoformiga.png)  
 *Captura do Web Server Responsivo*
