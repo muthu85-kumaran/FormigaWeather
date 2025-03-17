@@ -42,6 +42,9 @@ Um sistema IoT completo para monitoramento ambiental, capaz de:
 | Protoboard          | Placa de prototipagem           |  1  |
 | Fios jumper         | Fios diversos para conexões     |  1  |
 
+### Custo Total Estimado: R$ 143,48
+- Observações: Os preços foram obtidos de fornecedores brasileiros e podem variar conforme a sua região e o fornecedor.
+
 ## 🔌 Diagrama de Ligações
 ![Ligações da Estação FormigaWeather](circuit.jpg)  
 *Exemplo de conexão dos sensores com o NodeMCU:*
