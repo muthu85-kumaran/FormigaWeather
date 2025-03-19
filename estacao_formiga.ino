@@ -14,8 +14,8 @@
 #include <Ticker.h>
 
 // Configurações da rede
-const char* ssid = "dlink";
-const char* password = "";
+const char* ssid = "SEU-WIFI";
+const char* password = "SUA-SENHA";
 const char* apSSID = "Estacao_Formiga";
 const char* apPassword = "senha123";
 
